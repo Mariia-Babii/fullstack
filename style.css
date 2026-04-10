@@ -44,6 +44,7 @@ div p {
 p.info-text {
     background-color: #f5c6cb;
     padding: 10px;
+    margin: 15px;
 }
 
 /* 8. Combination: Tag + Class + Attribute (0,0,2,1) */
