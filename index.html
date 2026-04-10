@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>Applied to the main tag, weight 1</main>
+
+    <div class="simple-box">Applied to the .simple-box class, weight 10</div>
+
+    <div id="unique-block">Applied to the #unique-block id, weight 100</div>
+
+    <div data-role="alert">Applied to the [data-role="alert"] attribute, weight 10</div>
+
+    <div class="parent-container">
+        <p>Applied to the p tag nested inside div, weight 2</p>
+    </div>
+
+    <article class="content">
+        <h1>Applied to h1 as a direct child of .content, weight 11</h1>
+    </article>
+
+    <p class="info-text">Applied to p.info-text (tag and class combined), weight 11</p>
+
+    <div class="card" title="container">Applied to div.card[title="container"], weight 21</div>
+
+    <footer id="main-footer">
+        <span class="copyright">Applied to #main-footer span.copyright, weight 111</span>
+    </footer>
+
+    <ul class="nav-list">
+        <li class="item" data-active="true">Applied to li.item[data-active="true"]:first-child, weight 31</li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+/* 1. Tag Selector (0,0,0,1) */
+main {
+    background-color: #f8d7da;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* 2. Class Selector (0,0,1,0) */
+.simple-box {
+    background-color: #d4edda;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* 3. ID Selector (0,1,0,0) */
+#unique-block {
+    background-color: #d1ecf1;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* 4. Attribute Selector (0,0,1,0) */
+[data-role="alert"] {
+    background-color: #fff3cd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* 5. Nested Selector (0,0,0,2) */
+div p {
+    background-color: #e2e3e5;
+    padding: 10px;
+}
+
+/* 6. Child Selector (0,0,1,1) */
+.content > h1 {
+    background-color: #cce5ff;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+/* 7. Sequence (0,0,1,1) */
+p.info-text {
+    background-color: #f5c6cb;
+    padding: 10px;
+}
+
+/* 8. Combination: Tag + Class + Attribute (0,0,2,1) */
+div.card[title="container"] {
+    background-color: #b8daff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* 9. ID + Nesting (0,1,1,1) */
+#main-footer span.copyright {
+    display: block;
+    background-color: #c3e6cb;
+    padding: 10px;
+}
+
+/* 10. Tag + Class + Attribute + Pseudo-class (0,0,3,1) */
+li.item[data-active="true"]:first-child {
+    background-color: #ffeeba;
+    padding: 10px;
+    list-style: none;
+}
