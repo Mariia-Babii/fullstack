@@ -30,6 +30,7 @@ main {
 div p {
     background-color: #e2e3e5;
     padding: 10px;
+    margin: 15px;
 }
 
 /* 6. Child Selector (0,0,1,1) */
